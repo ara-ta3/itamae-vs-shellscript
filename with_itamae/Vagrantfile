@@ -13,6 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :itamae do |config|
     config.sudo = true
     config.recipes = [
+      'recipes/vim74.rb',
       'recipes/common.rb'
     ]
   end
